@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Hub</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/fontello.css">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <nav class="nav">
+        <div class="container">
+            <div class="nav-row">
+                 <a href="./index.html" class="logo" id="animatedLogo">
+                    <img src="img/logo.png" alt="Love Hub Logo"><strong>Love</strong> hub
+                  </a>
+                <ul class="nav-list">
+                    <li class="nav-list__item"><a href="./index.html" class="nav-list__link">Main</a></li>
+                    <li class="nav-list__item"><a href="./about.html" class="nav-list__link">About</a></li>
+                    <li class="nav-list__item"><a href="./calculator.html" class="nav-list__link">Calculator</a></li>
+                    <li class="nav-list__item"><a href="./board.html" class="nav-list__link">Builder</a></li>
+                    <li class="nav-list__item"><a href="./gallery.html" class="nav-list__link">Gallery</a></li>
+                    <li class="nav-list__item"><a href="./store.html" class="nav-list__link nav-list__link--active">Store</a></li>
+                    <li class="nav-list__item"><a href="#contact" class="nav-list__link">Contacts</a></li>
+                    <li class="nav-list__item"><a href="./login.html" class="nav-list__link">Log in</a></li>
+                    <li class="nav-list__item">
+                        <a href="#basket" class="nav-list__link">
+                            <img src="img/icons/shopping_basket.svg" alt="Basket Image" class="white-image">
+                        </a>
+                    </li> 
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+   
+    <main class="section">
+        <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="product-card">
+                    <img src="img/jewellery/1.png" alt="Product Image" class="product-image">
+                    <h3 class="product-title">Crystal Moon Glow</h3>
+                    <p>$1745</p>
+                    <button class="buy-button" onclick="addToCart('Crystal Moon Glow', 1745)">Buy</button>
+                </div>
+            </div>
+            <div class="col">
+                <div class="product-card">
+                    <img src="img/jewellery/2.png" alt="Product Image" class="product-image">
+                    <h3 class="product-title">Venetian Elegance</h3>
+                    <p>$67</p>
+                    <button class="buy-button" onclick="addToCart('Venetian Elegance', 67)">Buy</button>
+                </div>
+            </div>
+            <div class="col">
+                <div class="product-card">
+                    <img src="img/jewellery/3.png" alt="Product Image" class="product-image">
+                    <h3 class="product-title">Starry Rain of Gems</h3>
+                    <p>$590</p>
+                    <button class="buy-button" onclick="addToCart('Starry Rain of Gems', 590)">Buy</button>
+                </div>
+            </div>
+            <div class="col">
+                <div class="product-card">
+                    <img src="img/jewellery/4.png" alt="Product Image" class="product-image">
+                    <h3 class="product-title">Gold Swirl Luxury</h3>
+                    <p>$30</p>
+                    <button class="buy-button" onclick="addToCart('Gold Swirl Luxury', 30)">Buy</button>
+                </div>
+            </div>
+            <div class="col">
+                <div class="product-card">
+                    <img src="img/jewellery/5.png" alt="Product Image" class="product-image">
+                    <h3 class="product-title">Amethyst Magic</h3>
+                    <p>$70</p>
+                    <button class="buy-button" onclick="addToCart('Amethyst Magic', 70)">Buy</button>
+                </div>
+            </div>
+            <div class="col">
+                <div class="product-card">
+                    <img src="img/jewellery/6.png" alt="Product Image" class="product-image">
+                    <h3 class="product-title">Silver Dreams</h3>
+                    <p>$100</p>
+                    <button class="buy-button" onclick="addToCart('Silver Dreams', 100)">Buy</button>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="product-card">
+                        <img src="img/jewellery/7.png" alt="Product Image" class="product-image">
+                        <h3 class="product-title">Exquisite Emerald Sunset</h3>
+                        <p>$432</p>
+                        <button class="buy-button" onclick="addToCart('Exquisite Emerald Sunset', 432)">Buy</button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-card">
+                        <img src="img/jewellery/8.png" alt="Product Image" class="product-image">
+                        <h3 class="product-title">Pink Romance of Pearls</h3>
+                        <p>$678</p>
+                        <button class="buy-button" onclick="addToCart('Pink Romance of Pearls', 678)">Buy</button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-card">
+                        <img src="img/jewellery/9.png" alt="Product Image" class="product-image">
+                        <h3 class="product-title">Jade Tendernes</h3>
+                        <p>$45</p>
+                        <button class="buy-button" onclick="addToCart('Jade Tendernes', 45)">Buy</button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-card">
+                        <img src="img/jewellery/10.png" alt="Product Image" class="product-image">
+                        <h3 class="product-title">Royal Amber Collection</h3>
+                        <p>$15</p>
+                        <button class="buy-button" onclick="addToCart('Royal Amber Collection', 15 )">Buy</button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-card">
+                        <img src="img/jewellery/11.png" alt="Product Image" class="product-image">
+                        <h3 class="product-title">Sapphire Rise of Fantasy</h3>
+                        <p>$79</p>
+                        <button class="buy-button" onclick="addToCart('Sapphire Rise of Fantasy', 79)">Buy</button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-card">
+                        <img src="img/jewellery/12.png" alt="Product Image" class="product-image">
+                        <h3 class="product-title">Pearl Ombré</h3>
+                        <p>$90</p>
+                        <button class="buy-button" onclick="addToCart('Pearl Ombr', 90)">Buy</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="product-card">
+                        <img src="img/jewellery/13.png" alt="Product Image" class="product-image">
+                        <h3 class="product-title">Sparkling Ruby Paradise</h3>
+                        <p>$35</p>
+                        <button class="buy-button" onclick="addToCart('Sparkling Ruby Paradise', 35)">Buy</button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-card">
+                        <img src="img/jewellery/14.png" alt="Product Image" class="product-image">
+                        <h3 class="product-title">Topaz Dance</h3>
+                        <p>$367</p>
+                        <button class="buy-button" onclick="addToCart('Topaz Dance', 367)">Buy</button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-card">
+                        <img src="img/jewellery/15.png" alt="Product Image" class="product-image">
+                        <h3 class="product-title">Love's Diamond Veil</h3>
+                        <p>$689</p>
+                        <button class="buy-button" onclick="addToCart('Loves Diamond Veil', 689)">Buy</button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-card">
+                        <img src="img/jewellery/16.png" alt="Product Image" class="product-image">
+                        <h3 class="product-title">Exquisite Opal Fairy Tale</h3>
+                        <p>$50</p>
+                        <button class="buy-button" onclick="addToCart('Exquisite Opal Fairy Tale', 50)">Buy</button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-card">
+                        <img src="img/jewellery/17.png" alt="Product Image" class="product-image">
+                        <h3 class="product-title">Arabian Nights of Sardonyx</h3>
+                        <p>$60</p>
+                        <button class="buy-button" onclick="addToCart('Arabian Nights of Sardonyx', 60)">Buy</button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-card">
+                        <img src="img/jewellery/18.png" alt="Product Image" class="product-image">
+                        <h3 class="product-title">The Mystic Charm of Black Agates</h3>
+                        <p>$180</p>
+                        <button class="buy-button" onclick="addToCart('The Mystic Charm of Black Agates', 180)">Buy</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section id="basket">
+        <div class="section">
+            <div class="container">
+                <h1>Shopping Cart</h1>
+                <hr>
+                <p><ul id="cart-list"></ul></p>
+                <p>Total: $<span id="total-price">0</span></p>
+                <p>
+                    <input type="text" id="promo-code" placeholder="Enter promo code">
+                <button  class="buy-button"   onclick="applyPromoCode()">Apply</button>
+            </p>
+            </div>
+        </div>
+    </section>
+    
+       
+    <section id="contact">
+    <footer class="footer">
+            <div class="footer__wrapper">
+                <ul class="social">
+                    <li class="social__item"><a href="https://vk.com/miyukirii"><img src="./img/icons/vk.svg" alt="https://vk.com/miyukirii"></a></li>
+                    <li class="social__item"><a href="https://www.instagram.com/zayinuri/"><img src="./img/icons/instagram.svg" alt="https://www.instagram.com/zayinuri/"></a></li>
+                    <li class="social__item"><a href="https://twitter.com/zayinuri"><img src="./img/icons/twitter.svg" alt="https://twitter.com/zayinuri"></a></li>
+                    <li class="social__item"><a href="https://github.com/nurzhanova2"><img src="./img/icons/gitHub.svg" alt="https://github.com/nurzhanova2"></a></li>
+                    <li class="social__item"><a href="https://www.linkedin.com/in/zarina-nurzhanova-6a72891b5/"><img src="./img/icons/linkedIn.svg" alt="https://www.linkedin.com/in/zarina-nurzhanova-6a72891b5/"></a></li>
+                </ul>
+                <div class="copyright">
+                    <p>© 2023 ZARINA</p>
+                </div>
+            </div>
+    </footer>
+  </section>
+      <script>
+    let shoppingCart = [];
+    let total = 0;
+
+    function addToCart(productName, productPrice) {
+        const item = {
+            name: productName,
+            price: productPrice
+        };
+        shoppingCart.push(item);
+        total += productPrice;
+        updateCart();
+    }
+
+    function applyPromoCode() {
+        const promoCodeInput = document.getElementById('promo-code');
+        const promoCode = promoCodeInput.value;
+
+ 
+        if (promoCode === 'ZARINA100') {
+            total *= 0.5; 
+            updateCart();
+        } else {
+            alert('Invalid promo code');
+        }
+    }
+
+    function updateCart() {
+        const cartList = document.getElementById('cart-list');
+        const totalPrice = document.getElementById('total-price');
+
+
+        cartList.innerHTML = '';
+
+
+        shoppingCart.forEach(item => {
+            const li = document.createElement('li');
+            li.textContent = `${item.name} - $${item.price}`;
+            cartList.appendChild(li);
+        });
+
+
+        totalPrice.textContent = total.toFixed(2); 
+    }
+    </script>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

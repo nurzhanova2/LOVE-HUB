@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Hub</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/fontello.css">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <nav class="nav">
+        <div class="container">
+            <div class="nav-row">
+
+                <a href="./index.html" class="logo" id="animatedLogo">
+                    <img src="img/logo.png" alt="Love Hub Logo"><strong>Love</strong> hub
+                  </a>
+
+                <ul class="nav-list">
+                    <li class="nav-list__item"><a href="./index.html" class="nav-list__link nav-list__link--active">Main</a></li>
+                    <li class="nav-list__item"><a href="./about.html" class="nav-list__link">About</a></li>
+                    <li class="nav-list__item"><a href="./calculator.html" class="nav-list__link">Calculator</a></li>
+                    <li class="nav-list__item"><a href="./board.html" class="nav-list__link">Builder</a></li>
+                    <li class="nav-list__item"><a href="./gallery.html" class="nav-list__link">Gallery</a></li>
+                    <li class="nav-list__item"><a href="./store.html" class="nav-list__link">Store</a></li>
+                    <li class="nav-list__item"><a href="#contact" class="nav-list__link">Contacts</a></li>
+                    <li class="nav-list__item"><a href="./login.html" class="nav-list__link">Log in</a></li>
+                    <li class="nav-list__item">
+                        <a href="./store.html" class="nav-list__link">
+                            <img src="img/icons/shopping_basket.svg" alt="Basket Image" class="white-image">
+                        </a>
+                    </li>                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="header">
+        <div class="header__wrapper">
+            <h1 class="header__title">
+                <strong>
+                    <br>LOVE<br> HUB
+                </strong> <br>
+            </h1>
+            <div class="header__text">
+                <p>Let us accompany you<br> on your journey</p>
+            </div>
+            <button type="button" class="btn btn-light" id="loveButton">LOVE</button>
+        </div>
+    </header>
+
+  
+
+       <section id="contact">
+    <footer class="footer">
+            <div class="footer__wrapper">
+                <ul class="social">
+                    <li class="social__item"><a href="https://vk.com/miyukirii"><img src="./img/icons/vk.svg" alt="https://vk.com/miyukirii"></a></li>
+                    <li class="social__item"><a href="https://www.instagram.com/zayinuri/"><img src="./img/icons/instagram.svg" alt="https://www.instagram.com/zayinuri/"></a></li>
+                    <li class="social__item"><a href="https://twitter.com/zayinuri"><img src="./img/icons/twitter.svg" alt="https://twitter.com/zayinuri"></a></li>
+                    <li class="social__item"><a href="https://github.com/nurzhanova2"><img src="./img/icons/gitHub.svg" alt="https://github.com/nurzhanova2"></a></li>
+                    <li class="social__item"><a href="https://www.linkedin.com/in/zarina-nurzhanova-6a72891b5/"><img src="./img/icons/linkedIn.svg" alt="https://www.linkedin.com/in/zarina-nurzhanova-6a72891b5/"></a></li>
+                </ul>
+                <div class="copyright">
+                    <p>© 2023 ZARINA</p>
+                </div>
+            </div>
+    </footer>
+  </section>
+
+    <script>
+        var loveButton = document.getElementById('loveButton');
+
+        loveButton.addEventListener('click', function() {
+            window.location.href = './heart.html';
+        });
+
+        var animatedLogo = document.getElementById('animatedLogo');
+    </script>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

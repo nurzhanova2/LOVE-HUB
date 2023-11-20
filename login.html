@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Hub</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/fontello.css">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <nav class="nav">
+        <div class="container">
+            <div class="nav-row">
+                 <a href="./index.html" class="logo" id="animatedLogo">
+                    <img src="img/logo.png" alt="Love Hub Logo"><strong>Love</strong> hub
+                  </a>
+                <ul class="nav-list">
+                    <li class="nav-list__item"><a href="./index.html" class="nav-list__link">Main</a></li>
+                    <li class="nav-list__item"><a href="./about.html" class="nav-list__link">About</a></li>
+                    <li class="nav-list__item"><a href="./calculator.html" class="nav-list__link">Calculator</a></li>
+                    <li class="nav-list__item"><a href="./board.html" class="nav-list__link">Builder</a></li>
+                    <li class="nav-list__item"><a href="./gallery.html" class="nav-list__link">Gallery</a></li>
+                    <li class="nav-list__item"><a href="./store.html" class="nav-list__link">Store</a></li>
+                    <li class="nav-list__item"><a href="#contact" class="nav-list__link">Contacts</a></li>
+                    <li class="nav-list__item"><a href="./index.html" class="nav-list__link nav-list__link--active">Back</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+   
+    <main class="section">
+        <div class="container">
+            <div class="mask d-flex align-items-center h-100 gradient-custom-3">
+                <div class="container h-100">
+                  <div class="row d-flex justify-content-center align-items-center h-100">
+                    <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+                      <div class="card" style="border-radius: 15px;">
+                        <div class="card-body p-5">
+                          <h2 class="text-uppercase text-center mb-5">Create an account</h2>
+            
+                          <form>
+            
+                            <div class="form-outline mb-4">
+                              <input type="text" id="form3Example1cg" class="form-control form-control-lg" />
+                              <label class="form-label" for="form3Example1cg">Your Name</label>
+                            </div>
+            
+                            <div class="form-outline mb-4">
+                              <input type="email" id="form3Example3cg" class="form-control form-control-lg" />
+                              <label class="form-label" for="form3Example3cg">Your Email</label>
+                            </div>
+            
+                            <div class="form-outline mb-4">
+                              <input type="password" id="form3Example4cg" class="form-control form-control-lg" />
+                              <label class="form-label" for="form3Example4cg">Password</label>
+                            </div>
+            
+                            <div class="form-outline mb-4">
+                              <input type="password" id="form3Example4cdg" class="form-control form-control-lg" />
+                              <label class="form-label" for="form3Example4cdg">Repeat your password</label>
+                            </div>
+            
+                            <div class="form-check d-flex justify-content-center mb-5">
+                              <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3cg" />
+                              <label class="form-check-label" for="form2Example3g">
+                                I agree all statements in <a href="#!" class="text-body"><u>Terms of service</u></a>
+                              </label>
+                            </div>
+            
+                            <div class="d-flex justify-content-center">
+                                <button type="button" onclick="registerUser()"
+                                class="buy-button">Register</button>
+                            </div>
+                          </form>
+            
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </main>
+  
+
+       <section id="contact">
+    <footer class="footer">
+            <div class="footer__wrapper">
+                <ul class="social">
+                    <li class="social__item"><a href="https://vk.com/miyukirii"><img src="./img/icons/vk.svg" alt="https://vk.com/miyukirii"></a></li>
+                    <li class="social__item"><a href="https://www.instagram.com/zayinuri/"><img src="./img/icons/instagram.svg" alt="https://www.instagram.com/zayinuri/"></a></li>
+                    <li class="social__item"><a href="https://twitter.com/zayinuri"><img src="./img/icons/twitter.svg" alt="https://twitter.com/zayinuri"></a></li>
+                    <li class="social__item"><a href="https://github.com/nurzhanova2"><img src="./img/icons/gitHub.svg" alt="https://github.com/nurzhanova2"></a></li>
+                    <li class="social__item"><a href="https://www.linkedin.com/in/zarina-nurzhanova-6a72891b5/"><img src="./img/icons/linkedIn.svg" alt="https://www.linkedin.com/in/zarina-nurzhanova-6a72891b5/"></a></li>
+                </ul>
+                <div class="copyright">
+                    <p>© 2023 ZARINA</p>
+                </div>
+            </div>
+    </footer>
+  </section>
+
+    
+    <script>
+  function registerUser() {
+  const name = document.getElementById('form3Example1cg').value;
+  const email = document.getElementById('form3Example3cg').value;
+  const password = document.getElementById('form3Example4cg').value;
+  const repeatPassword = document.getElementById('form3Example4cdg').value;
+
+  document.addEventListener('keypress', function (event) {
+      if (event.key === 'Enter') {
+          validateAndRegister(name, email, password, repeatPassword);
+      }
+  });
+
+  document.getElementById('yourSubmitButtonId').addEventListener('click', function() {
+      validateAndRegister(name, email, password, repeatPassword);
+  });
+}
+
+function validateAndRegister(name, email, password, repeatPassword) {
+  if (name && email && password && repeatPassword) {
+      if (password === repeatPassword) {
+          alert(`Registration successful!\nName: ${name}\nEmail: ${email}`);
+      } else {
+          alert("Passwords do not match");
+      }
+  } else {
+      alert("Please fill in all fields");
+  }
+}
+  </script>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Hub</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/card.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/fontello.css">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <nav class="nav">
+        <div class="container">
+            <div class="nav-row">
+                 <a href="./index.html" class="logo" id="animatedLogo">
+                    <img src="img/logo.png" alt="Love Hub Logo"><strong>Love</strong> hub
+                  </a>
+                <ul class="nav-list">
+                    <li class="nav-list__item"><a href="./index.html" class="nav-list__link">Main</a></li>
+                    <li class="nav-list__item"><a href="./about.html" class="nav-list__link">About</a></li>
+                    <li class="nav-list__item"><a href="./calculator.html" class="nav-list__link nav-list__link--active">Calculator</a></li>
+                    <li class="nav-list__item"><a href="./board.html" class="nav-list__link">Builder</a></li>
+                    <li class="nav-list__item"><a href="./gallery.html" class="nav-list__link">Gallery</a></li>
+                    <li class="nav-list__item"><a href="./store.html" class="nav-list__link">Store</a></li>
+                    <li class="nav-list__item"><a href="#contact" class="nav-list__link">Contacts</a></li>
+                    <li class="nav-list__item"><a href="./login.html" class="nav-list__link">Log in</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+   
+    <main class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1>Love Calculator</h1>
+                    <hr>
+                    <label for="yourName">Your Name:</label>
+                    <input type="text" id="yourName" placeholder="Your Name" required><br>
+                    <hr>
+                    <label for="partnerName">Partner's Name:</label>
+                    <input type="text" id="partnerName" placeholder="Partner's Name" required><br>
+                    <hr>
+                    <button  style="border-radius: 12px;"  onclick="calculateLove()">Calculate Love</button>
+                    <hr>
+                    <p id="result"></p>
+                    <audio controls id="myAudio">
+                        <source src="music/Apocalypse.mp3" type="audio/mp3">
+                        Your browser does not support the audio tag.
+                    </audio>
+                </div>
+                <div class="col">
+                    <div id="carouselExample" class="carousel slide">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="img/musicimg/2.png" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/musicimg/3.png" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/musicimg/4.png" class="d-block w-100" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="container">
+            <br>
+            <div class="row">
+                <h2>What Our Clients Say</h2>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                    <div class="card-body" style="border-radius: 6px;">
+                      <h5 class="card-text">Di</h5>
+                      <p class="card-text">It's easier to live without love, but without it there's no meaning to life</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body" style="border-radius: 6px;">
+                          <h5 class="card-text">Nariman</h5>
+                          <p class="card-text">It's not how many days you have in your life, it's how many lives you have in your days.</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body" style="border-radius: 6px;">
+                          <h5 class="card-text">Fizhen</h5>
+                          <p class="card-text">Love is like a cigarette, it's like a cigarette that will kill you, and it's hard to quit.</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body" style="border-radius: 6px;">
+                          <h5 class="card-text">Timur</h5>
+                          <p class="card-text">Love can resurrect, but it can also kill.
+                            If you like to love, love to hate</p>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body" style="border-radius: 6px;">
+                          <h5 class="card-text">Adiya</h5>
+                          <p class="card-text">If you love someone for real, you hurt their wounds.</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body" style="border-radius: 6px;">
+                          <h5 class="card-text">Adilet</h5>
+                          <p class="card-text">two strangers who know each other by heart.</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body" style="border-radius: 6px;">
+                          <h5 class="card-text">Amir</h5>
+                          <p class="card-text">Love has no pain, said the bunny and hugged the hedgehog.</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body" style="border-radius: 6px;">
+                          <h5 class="card-text">Fizhen</h5>
+                          <p class="card-text">Love is like a cigarette, it's like a cigarette that will kill you, and it's hard to quit.</p>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                    <div class="card-body" style="border-radius: 6px;">
+                      <h5 class="card-text">Di</h5>
+                      <p class="card-text">It's easier to live without love, but without it there's no meaning to life</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body" style="border-radius: 6px;">
+                          <h5 class="card-text">Nariman</h5>
+                          <p class="card-text">It's not how many days you have in your life, it's how many lives you have in your days.</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body" style="border-radius: 6px;">
+                          <h5 class="card-text">Fizhen</h5>
+                          <p class="card-text">Love is like a cigarette, it's like a cigarette that will kill you, and it's hard to quit.</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body" style="border-radius: 6px;">
+                          <h5 class="card-text">Timur</h5>
+                          <p class="card-text">Love can resurrect, but it can also kill.
+                            If you like to love, love to hate</p>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+  
+
+       <section id="contact">
+    <footer class="footer">
+            <div class="footer__wrapper">
+                <ul class="social">
+                    <li class="social__item"><a href="https://vk.com/miyukirii"><img src="./img/icons/vk.svg" alt="https://vk.com/miyukirii"></a></li>
+                    <li class="social__item"><a href="https://www.instagram.com/zayinuri/"><img src="./img/icons/instagram.svg" alt="https://www.instagram.com/zayinuri/"></a></li>
+                    <li class="social__item"><a href="https://twitter.com/zayinuri"><img src="./img/icons/twitter.svg" alt="https://twitter.com/zayinuri"></a></li>
+                    <li class="social__item"><a href="https://github.com/nurzhanova2"><img src="./img/icons/gitHub.svg" alt="https://github.com/nurzhanova2"></a></li>
+                    <li class="social__item"><a href="https://www.linkedin.com/in/zarina-nurzhanova-6a72891b5/"><img src="./img/icons/linkedIn.svg" alt="https://www.linkedin.com/in/zarina-nurzhanova-6a72891b5/"></a></li>
+                </ul>
+                <div class="copyright">
+                    <p>© 2023 ZARINA</p>
+                </div>
+            </div>
+    </footer>
+  </section>
+    <script src="./js/main.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

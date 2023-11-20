@@ -1,0 +1,280 @@
+@import "./reset.css";
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Love+Light&family=Russo+One&display=swap');
+
+/*
+font-family: 'DM Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+*/
+
+.nav {
+  padding: 20px 0;
+  border-bottom: 1px solid #26292D; 
+  background-color: rgb(0, 0, 0);
+  color: #fff; 
+  letter-spacing: normal;
+}
+
+.nav-row {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  column-gap: 30px;
+  row-gap: 20px;
+  flex-wrap: wrap;
+}
+
+/**/
+.logo {
+  text-decoration: none;
+  color: #000; 
+  display: inline-block;
+  font-size: 24px; 
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+}
+
+.logo img {
+  vertical-align: middle;
+  margin-right: 10px; 
+}
+
+.logo strong {
+  color: #e2e2e2; 
+}
+
+.pulse {
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 10px;
+  align-items: center;
+  column-gap: 40px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+}
+
+.nav-list__link {
+  color: #fff; 
+  transition: opacity 0.2s ease-in;
+}
+
+.nav-list__link:hover {
+  opacity: 0.8;
+}
+
+.nav-list__link--active {
+  position: relative;
+}
+
+.nav-list__link--active::before {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  top: 100%;
+
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: rgb(92, 0, 92); 
+}
+
+.logo {
+  margin-right: auto;
+  color: #fff; 
+  font-size: 24px;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 50px; 
+  height: auto; 
+  margin-right: 10px; 
+}
+
+.header {
+  padding: 40px 0;
+  min-height: 695px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+  background-image: url('./../img/bg3\ \(2\).png');
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-position: center center;
+  
+  color: white;
+  text-align: center;
+}
+
+.header__title {
+  font-family: 'Love Light', cursive;
+  font-size: 85px;
+}
+
+.btn.btn-light {
+  background-color: rgba(42, 0, 60, 0.569) !important; 
+  color: #fff !important;
+}
+
+.btn.btn-light:active {
+  font-family: 'Poppins', sans-serif !important;
+  color: rgba(250, 247, 247, 0.992) !important;
+}
+
+.section {
+  background-color: #000000;
+  padding: 40px 0;
+  min-height: 695px;
+
+}
+
+.text{
+  padding: 40px 0;
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'DM Sans', sans-serif;
+  color: white;
+  font-size: 30px;
+}
+
+/*footer*/
+.footer {
+  margin-top: auto;
+  padding: 60px 0 50px;
+  background-color: black;
+  color: white;
+}
+
+.footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 27px;
+}
+
+.social {
+  display: flex;
+  column-gap: 30px;
+  align-items: center;
+}
+
+.copyright {
+  font-size: 16px;
+}
+
+.copyright p + p {
+  margin-top: 0.5em;
+}
+
+.h3 {
+    font-weight: 500;
+    line-height: 1.2;
+    color: rgb(255, 255, 255);
+}
+
+.white-image {
+  filter: brightness(0) invert(1);
+}
+
+
+.container {
+  color: #fff;
+  font-family: 'Poppins', sans-serif !important;
+  
+}
+
+.col-4{
+  font-family: 'Poppins', sans-serif !important;
+}
+
+.card-body {
+  color: #000000 !important;
+}
+
+
+.row {
+  padding: 10px;
+}
+
+/*product card/btn etc*/
+
+.product-card {
+  border: 3px solid #ccc;
+  padding: 20px;
+  text-align: center;
+  max-width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.product-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.product-title {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.buy-button {
+  background-color: #781e7b;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.buy-button:hover {
+  background-color: rgb(158, 69, 160);
+}
+
+/*calculator*/
+
+button {
+  background-color: rgb(87, 0, 80); 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px important!;
+}
+
+/*color picker*/
+#colorPicker {
+  border-radius: 50%;
+  padding: 5px; 
+}
+
