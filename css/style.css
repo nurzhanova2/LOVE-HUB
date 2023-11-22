@@ -24,6 +24,10 @@ font-family: 'Poppins', sans-serif;
   flex-wrap: wrap;
 }
 
+.text-purple {
+  color: #ffffff;
+}
+
 /**/
 .logo {
   text-decoration: none;
@@ -114,24 +118,20 @@ font-family: 'Poppins', sans-serif;
 .header {
   padding: 40px 0;
   min-height: 695px;
-
   display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: rgb(0, 0, 0);
-  background-image: url('./../img/bg3\ \(2\).png');
+  background-image: url('./../img/bg.jpg');
   background-repeat: no-repeat;
   background-size: cover; 
   background-position: center center;
   
   color: white;
-  text-align: center;
 }
 
 .header__title {
-  font-family: 'Love Light', cursive;
-  font-size: 85px;
+  font-size: 185px;
 }
+
 
 .btn.btn-light {
   background-color: rgba(42, 0, 60, 0.569) !important; 

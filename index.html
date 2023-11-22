@@ -39,23 +39,114 @@
         </div>
     </nav>
 
+    <main class="section">
     <header class="header">
-        <div class="header__wrapper">
-            <h1 class="header__title">
-                <strong>
-                    <br>LOVE<br> HUB
-                </strong> <br>
-            </h1>
-            <div class="header__text">
-                <p>Let us accompany you<br> on your journey</p>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1 style="font-size: 85px;">
+                        LOVE HUB<br>
+                    </h1>
+                    <h4>
+                        Indulge in the enchanting world of our jewelry store, where every piece is a chapter in your one-of-a-kind love story. We hold the firm belief that within the gleam and sparkle of each gem, there resides a special and incredible narrative waiting to be told.<br><br>
+                        
+                        Here, it's not merely about jewelry; it's a journey of inspiration and a symbol of the unique love that binds two souls together. Our collection is a carefully curated ensemble, each piece chosen with the intent to amplify the beauty and individuality of your relationship.<br><br>
+                            </h4>
+                    <a href="./store.html" class="buy-button">Shop Now</a>
+                </div>
+                <div class="col"></div>
             </div>
-            <button type="button" class="btn btn-light" id="loveButton">LOVE</button>
         </div>
     </header>
 
-  
 
-       <section id="contact">
+    <div class="container">
+        <hr>
+        <div class="row">
+                <div class="product-card">
+                    <h1>BUILDER</h1>
+                    <p>design Your Piece: Dive into the builder, sketch design</p>
+                    <button class="buy-button" onclick="addToCart('Arabian Nights of Sardonyx', 60)">Buy</button>
+                </div>
+                <div class="product-card">
+                    <h1>GALLERY</h1>
+                    <p>come in and see our jewelry from the new collection.</p>
+                    <a href="calculator.html" class="buy-button">calculate</a>
+                </div>
+                <div class="product-card">
+                    
+                    <h1>CALCULATOR</h1>
+                    <p>calculate your compatibility with your soul mate in our calculator</p>
+                    <a href="calculator.html" class="buy-button">calculate</a>
+                </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <hr>
+        <section>
+            <h3 class="text-center mb-4 pb-2 text-purple fw-bold">FAQ</h3>
+            <p class="text-center mb-5">
+              Find the answers for the most frequently asked questions below
+            </p>
+          
+            <div class="row">
+              <div class="col-md-6 col-lg-4 mb-4">
+                <h5 class="mb-3 text-purple"><i class="far fa-paper-plane text-purple pe-2"></i>Is my payment information secure?</h5>
+                <p>
+                  <strong><u>Absolutely!</u></strong> We work with top payment companies which guarantees
+                  your
+                  safety and
+                  security. All billing information is stored on our payment processing partner.
+                </p>
+              </div>
+          
+              <div class="col-md-6 col-lg-4 mb-4">
+                <h5 class="mb-3 text-purple"><i class="fas fa-pen-alt text-purple pe-2"></i>Can I cancel my subscription?</h5>
+                <p>
+                  <strong><u>Yes, it is possible!</u></strong> You can cancel your subscription anytime in
+                  your
+                  account. Once the subscription is
+                  cancelled, you will not be charged next month.
+                </p>
+              </div>
+          
+              <div class="col-md-6 col-lg-4 mb-4">
+                <h5 class="mb-3 text-purple"><i class="fas fa-user text-purple pe-2"></i>What subscription options do you offer?
+                </h5>
+                <p>
+                  Currently, we only offer monthly subscription. You can upgrade or cancel your monthly
+                  account at any time with no further obligation.
+                </p>
+              </div>
+          
+              <div class="col-md-6 col-lg-4 mb-4">
+                <h5 class="mb-3 text-purple"><i class="fas fa-rocket text-purple pe-2"></i>How do I update my payment information?
+                </h5>
+                <p>
+                  Yes. Go to the billing section of your dashboard and update your payment information.
+                </p>
+              </div>
+          
+              <div class="col-md-6 col-lg-4 mb-4">
+                <h5 class="mb-3 text-purple"><i class="fas fa-home text-purple pe-2"></i>Do you offer refunds?
+                </h5>
+                <p><strong><u>Unfortunately no</u>.</strong> We do not issue full or partial refunds for any
+                  reason.</p>
+              </div>
+          
+              <div class="col-md-6 col-lg-4 mb-4">
+                <h5 class="mb-3 text-purple"><i class="fas fa-book-open text-purple pe-2"></i>Is there a free plan available?</h5>
+                <p>
+                  Of course! We’re happy to offer a free plan to anyone who wants to try our service.
+                </p>
+              </div>
+            </div>
+          </section>
+    </div>
+</main>
+
+<section id="contact">
     <footer class="footer">
             <div class="footer__wrapper">
                 <ul class="social">
@@ -71,17 +162,6 @@
             </div>
     </footer>
   </section>
-
-    <script>
-        var loveButton = document.getElementById('loveButton');
-
-        loveButton.addEventListener('click', function() {
-            window.location.href = './heart.html';
-        });
-
-        var animatedLogo = document.getElementById('animatedLogo');
-    </script>
-
     <script src="./js/main.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
