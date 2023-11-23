@@ -200,13 +200,14 @@
     <section id="basket">
         <div class="section">
             <div class="container">
-                <h1>Shopping Cart</h1>
                 <hr>
+                <h1>Shopping Cart</h1>
                 <p><ul id="cart-list"></ul></p>
                 <p>Total: $<span id="total-price">0</span></p>
                 <p>
                     <input type="text" id="promo-code" placeholder="Enter promo code">
                 <button  class="buy-button"   onclick="applyPromoCode()">Apply</button>
+                <button class="buy-button" onclick="checkout()">CHECKOUT</button>
             </p>
             </div>
         </div>
@@ -229,7 +230,7 @@
             </div>
     </footer>
   </section>
-      <script>
+  <script>
     let shoppingCart = [];
     let total = 0;
 
@@ -247,22 +248,23 @@
         const promoCodeInput = document.getElementById('promo-code');
         const promoCode = promoCodeInput.value;
 
- 
         if (promoCode === 'ZARINA100') {
-            total *= 0.5; 
+            total *= 0.5;
             updateCart();
         } else {
             alert('Invalid promo code');
         }
     }
 
+    function checkout() {
+    alert(`Thank you for your purchase! Total amount: $${total.toFixed(2)}`);
+}
+
     function updateCart() {
         const cartList = document.getElementById('cart-list');
         const totalPrice = document.getElementById('total-price');
 
-
         cartList.innerHTML = '';
-
 
         shoppingCart.forEach(item => {
             const li = document.createElement('li');
@@ -270,11 +272,9 @@
             cartList.appendChild(li);
         });
 
-
-        totalPrice.textContent = total.toFixed(2); 
+        totalPrice.textContent = total.toFixed(2);
     }
-    </script>
-
+</script>
     <script src="./js/main.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
