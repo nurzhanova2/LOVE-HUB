@@ -4,7 +4,7 @@ function calculateLove() {
     const yourName = document.getElementById('yourName').value;
     const partnerName = document.getElementById('partnerName').value;
 
-    const lovePercentage = Math.floor(Math.random() * 101);
+    const lovePercentage = Math.floor(Math.random() * 100);
 
     let result = '';
     if (lovePercentage > 80) {
