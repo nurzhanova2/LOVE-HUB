@@ -47,7 +47,7 @@ font-family: 'Poppins', sans-serif;
 }
 
 .pulse {
-  animation: pulse 1s infinite;
+  animation: pulse 2s infinite;
 }
 
 @keyframes pulse {

@@ -1,14 +1,3 @@
-/* Logo */
-function addPulse() {
-    animatedLogo.classList.add('pulse');
-  }
-  
-  function removePulse() {
-    animatedLogo.classList.remove('pulse');
-  }
-  
-  animatedLogo.addEventListener('mouseover', addPulse);
-  animatedLogo.addEventListener('mouseout', removePulse);
 
 /* calculator */
 function calculateLove() {
@@ -38,14 +27,7 @@ function calculateLove() {
 audio.play();
 }); 
 
-/* love btn */
-var loveButton = document.getElementById('loveButton');
 
-loveButton.addEventListener('click', function() {
-    window.location.href = './heart.html';
-});
-
-var animatedLogo = document.getElementById('animatedLogo');
 
 
 
